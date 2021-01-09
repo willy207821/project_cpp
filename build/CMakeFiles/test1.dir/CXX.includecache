@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/person.h
+iostream
+-
+string
+-
+
+/data/data/com.termux/files/home/repo/src/person.cpp
+person.h
+/data/data/com.termux/files/home/repo/src/person.h
+
