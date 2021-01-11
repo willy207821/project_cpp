@@ -8,8 +8,10 @@ private:
 	std::string p_firstName;
 	std::string p_lastName;
 	std::string p_middleName;
-public:
 	pname();
+
+public:
+	pname(std::string cfn,std::string cmn,std::string cln);
 
 	void setfirstName(const std::string &fn);
 	void setlastName(const std::string &ln);

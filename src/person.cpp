@@ -1,9 +1,7 @@
 #include "person.h"
 
-	Person::pname::pname()
-	{
-	std::cout<<"default contructor"<<std::endl;
-}
+	Person::pname::pname(){}
+	Person::pname::pname(std::string cfn,std::string cmn,std::string cln):p_firstName(cfn),p_middleName(cmn),p_lastName(cln){}
 
         void Person::pname::setfirstName(const std::string &fn)
 	{
@@ -30,7 +28,4 @@
 	return p_middleName;
 }
 
-       Person::pname::~pname()
-	{
-	std::cout<<"default destructor"<<std::endl;
-}
+       Person::pname::~pname(){}

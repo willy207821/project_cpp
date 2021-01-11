@@ -3,12 +3,9 @@
 int main(int argc, char const *argv[])
 {
 	
-	Person::pname p_name;
-	p_name.setfirstName("Wilfredo");
-	p_name.setlastName("Caparas");
-	p_name.setmiddleName("Medina");
+	Person::pname p_name("Wilfredo","Medina","Caparas");
 
-	std::cout<<"My name is "<<p_name.getfirstName()<<" "<<p_name.getlastName()<<" "<<p_name.getmiddleName()<<std::endl;
+	std::cout<<"My name is "<<p_name.getfirstName()<<" "<<p_name.getmiddleName()<<" "<<p_name.getlastName()<<std::endl;
 
 	return 0;
 }
