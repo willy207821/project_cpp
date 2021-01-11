@@ -1,36 +1,36 @@
 #include "person.h"
 
-	person::person()
+	Person::pname::pname()
 	{
 	std::cout<<"default contructor"<<std::endl;
 }
 
-        void person::setfirstName(const std::string &fn)
+        void Person::pname::setfirstName(const std::string &fn)
 	{
 	p_firstName=fn;
 }
-        void person::setlastName(const std::string &ln)
+        void Person::pname::setlastName(const std::string &ln)
 	{
 	p_lastName=ln;
 }
-        void person::setmiddleName(const std::string &mn)
+        void Person::pname::setmiddleName(const std::string &mn)
 	{
 	p_middleName=mn;
 }
-        std::string const person:: getfirstName()const
+        std::string const Person::pname:: getfirstName()const
 	{
 	 return p_firstName;
 }
-        std::string const person::getlastName()const
+        std::string const Person::pname::getlastName()const
 	{
 	return p_lastName;
 }
-        std::string const person::getmiddleName()const
+        std::string const Person::pname::getmiddleName()const
 	{
 	return p_middleName;
 }
 
-       person::~person()
+       Person::pname::~pname()
 	{
 	std::cout<<"default destructor"<<std::endl;
 }

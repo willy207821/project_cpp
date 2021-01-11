@@ -2,13 +2,14 @@
 #define PERSON_H
 #include <iostream>
 #include <string>
-class person {
+namespace Person{
+class pname {
 private:
 	std::string p_firstName;
 	std::string p_lastName;
 	std::string p_middleName;
 public:
-	person();
+	pname();
 
 	void setfirstName(const std::string &fn);
 	void setlastName(const std::string &ln);
@@ -18,8 +19,8 @@ public:
 	std::string const getlastName()const;
 	std::string const getmiddleName()const;
 	
-	~person();
+	~pname();
 };
 
-
+}
 #endif //PERSON_H

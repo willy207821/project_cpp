@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[])
 {
 	
-	person p_name;
+	Person::pname p_name;
 	p_name.setfirstName("Wilfredo");
 	p_name.setlastName("Caparas");
 	p_name.setmiddleName("Medina");
