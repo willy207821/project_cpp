@@ -2,16 +2,20 @@
 #define PERSON_H
 #include <iostream>
 #include <string>
+#include <cstdio>
+
+const std::string unk ="unknown";
 namespace Person{
 class pname {
 private:
-	std::string p_firstName;
-	std::string p_lastName;
-	std::string p_middleName;
-	pname();
+	std::string p_firstName="";
+	std::string p_lastName="";
+	std::string p_middleName="";
 
+	
 public:
-	pname(std::string cfn,std::string cmn,std::string cln);
+	pname();//default constructor
+	pname(const std::string &firstName,const std::string &middleName,const std::string &lastName);
 
 	void setfirstName(const std::string &fn);
 	void setlastName(const std::string &ln);

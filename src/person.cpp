@@ -1,7 +1,11 @@
 #include "person.h"
 
-	Person::pname::pname(){}
-	Person::pname::pname(std::string cfn,std::string cmn,std::string cln):p_firstName(cfn),p_middleName(cmn),p_lastName(cln){}
+	Person::pname::pname():p_firstName(unk),p_middleName(unk),p_lastName(unk){
+		puts("default contructor");
+	}
+	Person::pname::pname(const std::string &cfn,const std::string &cmn,const std::string &cln):p_firstName(cfn),p_middleName(cmn),p_lastName(cln){
+		puts("constructor with argument");
+	}
 
         void Person::pname::setfirstName(const std::string &fn)
 	{
@@ -28,4 +32,6 @@
 	return p_middleName;
 }
 
-       Person::pname::~pname(){}
+       Person::pname::~pname(){
+       	puts("destructor");
+       }
