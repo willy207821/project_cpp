@@ -7,6 +7,22 @@
 		puts("constructor with argument");
 	}
 
+	Person::pname::pname(const Person::pname & cpname){
+		puts("copy contructor");
+		p_firstName=cpname.p_firstName;
+		p_middleName=cpname.p_middleName;
+		p_lastName=cpname.p_lastName;
+	}
+	Person::pname & Person::pname::operator=(const Person::pname & opname){
+		puts("copy operator");
+		if(this != &opname){
+			p_firstName=opname.p_firstName;
+			p_middleName=opname.p_middleName;
+			p_lastName=opname.p_lastName;		
+		}
+		return *this;
+	}
+
         void Person::pname::setfirstName(const std::string &fn)
 	{
 	p_firstName=fn;
@@ -30,6 +46,10 @@
         std::string const Person::pname::getmiddleName()const
 	{
 	return p_middleName;
+}
+
+void Person::pname::printName()const{
+	printf("%s %s %s \n",p_firstName.c_str(),p_middleName.c_str(),p_lastName.c_str());
 }
 
        Person::pname::~pname(){

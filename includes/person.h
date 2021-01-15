@@ -14,17 +14,31 @@ private:
 
 	
 public:
-	pname();//default constructor
+	/* default constructor */
+	pname();
+	
+	/* contruction with argument */
 	pname(const std::string &firstName,const std::string &middleName,const std::string &lastName);
+	
+	/*Copy contructor */
+	pname(const pname & cpname);
 
+	/*operator constructor */
+	pname & operator=(const pname & opname);
+
+	/* setter */
 	void setfirstName(const std::string &fn);
 	void setlastName(const std::string &ln);
 	void setmiddleName(const std::string &mn);
 
+	/* getter */
 	std::string const getfirstName()const;
 	std::string const getlastName()const;
 	std::string const getmiddleName()const;
 	
+	void printName()const;
+
+	/*destructor*/
 	~pname();
 };
 

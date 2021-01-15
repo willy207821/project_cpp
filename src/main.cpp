@@ -3,9 +3,16 @@
 int main(int argc, char const *argv[])
 {
 	Person::pname pn;
-	Person::pname p_name("Wilfredo","Medina","Caparas");
+	pn.printName();
 
-	std::cout<<"My name is "<<p_name.getfirstName()<<" "<<p_name.getmiddleName()<<" "<<p_name.getlastName()<<std::endl;
+	const Person::pname nN("First Name","Middle Name", "Last Name");
+ 	nN.printName();
+	const Person::pname CLC("Ma. Crisitna","Legaspi","Caparas");
+	CLC.printName();
 
+	const Person::pname WMC("Wilfredo","Medina","Caparas");
+	WMC.printName();
+
+	
 	return 0;
 }
